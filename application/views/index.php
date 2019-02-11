@@ -12,21 +12,38 @@
             <th>ชื่อ-สกุล</th>
             <th>ชื่อวิชา</th>
             <th>สถานะ</th>
-            <!-- <th class="text-center">แก้ไขข้อมูล</th> -->
+            <th class="text-center">แก้ไขข้อมูล</th>
         </tr>
     </thead>
-    
-    <?php if (mysqli_num_rows($result) > 0) {
-            // output data of each row
-            while($row = mysqli_fetch_assoc($result)) {
-                echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-            }
-        } else {
-            echo "0 results";
-        }
-    ?>
-    
-    
+    <?php 
+        foreach($result as $row) {?>
+                <tr>
+                    <td><?=$row["studentid"] ?></td>
+                    <td><?=$row["studentName"] ?></td>
+                    <td><?=$row["courseName"] ?></td>
+                    <td><?=$row["status"] ?></td>
+                </tr>
+            <?php } ?>
+
+
+            <!-- <tr>
+                <td>1</td>
+                <td>News</td>
+                <td>News Cate</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Products</td>
+                <td>Main Products</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Blogs</td>
+                <td>Parent Blogs</td>
+                <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+            </tr> -->
     </table>
     </div>
 </div>
