@@ -22,4 +22,19 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('welcome_message');
 	}
+	
+	public function getReGrade($username){
+		$this->load->model('UserModel');
+		$result = $this->UserModel->getregrade($username);
+		$this->load->view("index",$result);
+	}
+	// public function login($username,$password){
+	// 	$this->load->model('UserModel');
+	// 	$result = $this->UserModel->login($username,$password);
+	// 	if($result){
+		
+	// 	}
+
+	// }
+
 }
