@@ -40,4 +40,12 @@ class Welcome extends CI_Controller {
 
 	}
 
+	public function insert($studentid,$coursid,$year,$term,$grade){
+		$this->load->model('UserModel');
+		$result = $this->UserModel->insert($studentid,$coursid,$year,$term,$grade);
+		
+		
+
+	}
+
 }
