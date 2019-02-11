@@ -26,7 +26,7 @@
                 <div class="row" style ="margin-top:25px;">
                     <div class="col">
                          <label class="my-1 mr-2" for="inlineFormCustomSelectPref">ภาคการศึกษา</label>
-                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <select class="custom-select my-1 mr-sm-2" name="term" id="inlineFormCustomSelectPref">
                                 <option selected>- ภาคการศึกษา -</option>
                                 <option value="1">ภาคการศึกษาที่ 1</option>
                                 <option value="2">ภาคการศึกษาที่ 2</option>
@@ -58,7 +58,7 @@
                 <div class="row" style ="margin-top:25px;">
                     <div class="col">
                          <label class="my-2 mr-1" for="inlineFormCustomSelectPref">ผลการศึกษา</label>
-                            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                            <select class="custom-select my-1 mr-sm-2" name="grade" id="inlineFormCustomSelectPref">
                                 <option selected>- ผลการศึกษา -</option>
                                 <option value="1">W</option>
                                 <option value="2">F</option>
@@ -70,12 +70,10 @@
                 <br>
                <div class="row" style ="margin-top:25px;">
                     <div class="col">
-                        <button type="button" class="btn btn-info">บันทึกข้อมูล</button>
+                        <button type="submit" class="btn btn-info">บันทึกข้อมูล</button>
                     </div>
                </div>
-
-
-               
+   
             </form>
         </div>
     </div>
