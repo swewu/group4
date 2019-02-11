@@ -26,7 +26,10 @@ class Welcome extends CI_Controller {
 	public function getReGrade($username){
 		$this->load->model('UserModel');
 		$result = $this->UserModel->getregrade($username);
-		$this->load->view("index",$result);
+		$data = [
+			'result' => $result
+		];
+		$this->load->view("index",$data);
 	}
 	// public function login($username,$password){
 	// 	$this->load->model('UserModel');

@@ -16,7 +16,7 @@ class UserModel extends CI_Model
     }
 
     public function getReGrade($username){
-        $sql = "SELECT * FORM user WHERE username = '".$username."'";
+        $sql = "SELECT * FROM historygrade WHERE studentid = '".$username."'";
         $query = $this->db->query($sql);
         return $query->result();
     }
