@@ -28,13 +28,13 @@ class Welcome extends CI_Controller {
 		$result = $this->UserModel->getregrade($username);
 		$this->load->view("index",$result);
 	}
-	// public function login($username,$password){
-	// 	$this->load->model('UserModel');
-	// 	$result = $this->UserModel->login($username,$password);
-	// 	if($result){
-		
-	// 	}
+	public function login($username,$password){
+		$this->load->model('UserModel');
+		$result = $this->UserModel->login($username,$password);
+		if($_SESSION['login']){
+			$this->load->view('login');
+		}
 
-	// }
+	}
 
 }
