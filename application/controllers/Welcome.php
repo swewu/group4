@@ -35,7 +35,7 @@ class Welcome extends CI_Controller {
 		$this->load->model('UserModel');
 		$result = $this->UserModel->login($username,$password);
 		if($_SESSION['login']){
-			$this->load->view('login');
+			$this->load->view('index');
 		}
 
 	}

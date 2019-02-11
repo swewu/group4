@@ -21,7 +21,7 @@ class UserModel extends CI_Model
         return $query->result();
     }
     public function login($username , $password){
-        $sql = "SELECT * FORM user WHERE username = ".$username."AND"."password".$password;
+        $sql = "SELECT * FROM user WHERE username = ".$username."AND"."password".$password;
         $query = $this->db->query($sql);
         foreach ($query->result() as $row ){
             $_SESSION['username'] = $row->username;
