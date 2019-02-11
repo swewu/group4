@@ -35,7 +35,8 @@
           </div>
         </div>
         <div class="d-flex justify-content-center form_container">
-          <form>
+          <form action="<?= base_url("welcome/getReGrade/61101192")?>">
+            <p class="text-center">ระบบตรวจสอบรายวิชาตกค้าง</p><br>
             <div class="input-group mb-3">
               <div class="input-group-append">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -54,10 +55,10 @@
                 <label class="custom-control-label" for="customControlInline">Remember me</label>
               </div>
             </div>
+            <div class="d-flex justify-content-center mt-3 login_container">
+              <button type="submit" class="btn btn-info">Login</button>
+            </div>
           </form>
-        </div>
-        <div class="d-flex justify-content-center mt-3 login_container">
-          <button type="button" name="button" class="btn btn-info">Login</button>
         </div>
         <div class="mt-4">
           <div class="d-flex justify-content-center links">
