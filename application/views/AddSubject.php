@@ -8,7 +8,7 @@
 <div class="container">
     <div class="form-style-2">
         <h2 style ="margin-top:25px;"> กรอกข้อมูลรายวิชาตกค้าง </h2>
-            <form action="" method="post">
+            <form action="<?=base_url('Welcome/insert')?>" method="post">
                 <div class="row " style ="margin-top:25px;">
                     <div class="col" >
                         <div class="form-group mb-3">
