@@ -11,7 +11,7 @@ class User_model_test extends TestCase
 
     public function test_insert_user()
     {
-        $id = 1;
+        $id = null;
         $username = 'admin';
         $password = 'admin';
         $role = '';
