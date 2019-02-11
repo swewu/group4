@@ -14,4 +14,21 @@ class UserModel extends CI_Model
         $this->db->insert('user', $data);
         return ($this->db->affected_rows() != 1) ? false : true;
     }
+
+    public function getReGrade($username){
+        $sql = "SELECT * FORM user WHERE username = '".$username."'";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
+    // public function login($username , $password){
+    //     $sql = "SELECT * FORM user WHERE username = ".$username."AND"."password".$password;
+    //     $query = $this->db->query($sql);
+    //     if ($this->db->affected_rows() != 1){
+    //         return false;
+    //     }
+    //     else{
+    //         $_SESSION["username"] = $row['username'];
+    //         $_SESSION["password"] = $row['password'];
+    //     }
+    // }
 }
