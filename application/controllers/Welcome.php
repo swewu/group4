@@ -26,7 +26,10 @@ class Welcome extends CI_Controller {
 	public function getReGrade($username){
 		$this->load->model('UserModel');
 		$result = $this->UserModel->getregrade($username);
-		$this->load->view("index",$result);
+		$data = [
+			'result' => $result
+		];
+		$this->load->view("index",$data);
 	}
 	public function login($username,$password){
 		$this->load->model('UserModel');
@@ -34,6 +37,14 @@ class Welcome extends CI_Controller {
 		if($_SESSION['login']){
 			$this->load->view('login');
 		}
+
+	}
+
+	public function insert($studentid,$coursid,$year,$term,$grade){
+		$this->load->model('UserModel');
+		$result = $this->UserModel->insert($studentid,$coursid,$year,$term,$grade);
+		
+		
 
 	}
 
