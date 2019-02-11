@@ -29,4 +29,20 @@ class UserModel extends CI_Model
             $_SESSION['login'] = true;
         }
     }
+
+    public function insert($studentid,$studentname,$year,$courseID,$courseName){
+		// $this->load->model('UserModel');
+		// $result = $this->UserModel->insert($studentid,$coursid,$year,$term,$grade);
+			
+		$data = array(         
+			'studentid' => $studentid,         
+			'studentname' => $studentname,         
+			'year' => $year,
+			'courseid' => $courseid,  
+			'courseName' => $courseName  
+		 ); 
+		 $this->db->insert('historygrade', $data); 
+		 
+ 
+	}
 }

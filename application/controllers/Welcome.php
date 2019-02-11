@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('login');
+		$this->load->view('AddSubject');
 	}
 	
 	public function getReGrade($username){
@@ -40,9 +40,9 @@ class Welcome extends CI_Controller {
 
 	}
 
-	public function insert($studentid,$coursid,$year,$term,$grade){
+	public function insert($studentid,$studentname,$year,$courseID,$courseName){
 		$this->load->model('UserModel');
-		$result = $this->UserModel->insert($studentid,$coursid,$year,$term,$grade);
+		$result = $this->UserModel->insert($studentid,$studentname,$year,$courseID,$courseName);
 	}
 
 }

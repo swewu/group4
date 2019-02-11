@@ -13,13 +13,13 @@
                     <div class="col" >
                         <div class="form-group mb-3">
                             <label for="exampleInputEmail1">รหัสนักศึกษา</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="รหัสนักศึกษา">
+                            <input type="text" class="form-control" name="studentid" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="รหัสนักศึกษา">
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group mb-3">
                             <label for="exampleInputEmail1">ชื่อ</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ชื่อ">
+                            <input type="text" name="studentname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ชื่อ">
                         </div>
                     </div>
                 </div>
@@ -36,7 +36,7 @@
                     <div class="col">
                         <div class="form-group mb-3">
                             <label for="exampleInputEmail1">ปีการศึกษา</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ปีการศึกษา">
+                            <input type="text" name="year" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ปีการศึกษา">
                         </div>
                     </div>
                 </div>
@@ -45,13 +45,13 @@
                     <div class="col">
                         <div class="form-group mb-2">
                             <label for="exampleInputEmail1">รหัสรายวิชา</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="รหัสรายวิชา">
+                            <input type="text" name="courseID" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="รหัสรายวิชา">
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group mb-4">
                             <label for="exampleInputEmail1">ชื่อรายวิชา</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ชื่อรายวิชา">
+                            <input type="text" name="courseName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ชื่อรายวิชา">
                         </div>
                     </div>
                 </div>
