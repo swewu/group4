@@ -38,7 +38,7 @@
             <a href="#" class="btn btn-danger btn-xs">
             <span class="glyphicon glyphicon-remove"></span> Del</a></td>
         </tr>
-        <?php } else if ($row->status == "F") { ?>
+        <?php } elseif ($row->status == "F") { ?>
         <tr>
             <td><?=$row->courseName ?></td>
             <td><?=$row->status?></td>
@@ -47,7 +47,7 @@
             <a href="#" class="btn btn-danger btn-xs">
             <span class="glyphicon glyphicon-remove"></span> Del</a></td>
         </tr>
-        <?php } else if ($row->status == "D") { ?>
+        <?php } elseif ($row->status == "D") { ?>
         <tr>
             <td><?=$row->courseName ?></td>
             <td><?=$row->status?></td>
