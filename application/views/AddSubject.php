@@ -8,7 +8,7 @@
 <div class="container">
     <div class="form-style-2">
         <h2 style ="margin-top:25px;"> กรอกข้อมูลรายวิชาตกค้าง </h2>
-            <form action="<?=base_url('Welcome/insert')?>" method="post">
+            <form action="<?=base_url('Subject/insert')?>" method="post">
                 <div class="row " style ="margin-top:25px;">
                     <div class="col" >
                         <div class="form-group mb-3">
@@ -45,7 +45,7 @@
                     <div class="col">
                         <div class="form-group mb-2">
                             <label for="exampleInputEmail1">รหัสรายวิชา</label>
-                            <input type="text" name="courseID" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="รหัสรายวิชา">
+                            <input type="text" name="courseid" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="รหัสรายวิชา">
                         </div>
                     </div>
                     <div class="col">
