@@ -41,22 +41,63 @@ class Welcome extends CI_Controller {
 			$password = $_POST['password'];
 			$this->load->model('UserModel');
 			$result = $this->UserModel->login($username,$password);
-			if($_SESSION['login']!=null){
-				$this->load->model('UserModel');
-				$result = $this->UserModel->getregrade($username);
-				$data = [
-					'result' => $result
-				];
-				$this->load->view("index",$data);
+			if($_SESSION['login']!=null)
+			{
+				if($_SESSION['rule']=="Student")
+				{
+					$this->load->model('UserModel');
+					$result = $this->UserModel->getregrade($username);
+					$data = [
+						'result' => $result
+					];
+					$this->load->view("index",$data);
+				}
+				else
+				{
+					
+				}
 			}
 			else
 			{
 				$this->load->view("login");
+				echo "<script type='text/javascript'>alert('wrong username or password');</script>";
 			}
 		
 		}
 
 	}
 
-	
+	public function insert()
+	{
+		$studentid = 'studentid';
+		$studentname = 'studentname';
+		$year = 'year';
+		$term = 'term';
+		$courseID = 'courseID';
+		$courseName = 'courseName';
+		$grade = 'grade';
+		$this->load->model('UserModel');
+		$result = $this->UserModel->insert($studentid,$studentname,$year,$courseID,$courseName,$term,$grade);
+	}	
+	// $studentid,$studentname,$year,$courseID,$courseName,$term,$grade
+	public function delete($historyid)
+	{
+		$historyid = 'historyid';
+		$this->load->model('historygrade');
+		$result = $this->UserModel->delete($historyid);
+	}
+	public function editReGrade($historyid) 
+	{
+		$this->load->model('HistoryModel');
+		$result = $this->HistoryModel->editReGrade($historyid);
+		$data = [
+			'result' => $results
+		];
+		$this->load->view('edithistory');
+	}
+
+	public function update(){
+		
+	}
+
 }
