@@ -90,10 +90,13 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`userid`, `username`, `password`, `role`) VALUES
-(0000000001, 'admin', 'root', 'Admin'),
-(0000000002, 'lecture', 'l1234', 'Lecture'),
-(0000000003, 'student', 's1234', 'Student');
-
+(0000000001,'admin', 'root', 'Admin'),
+(0000000002,'lecture', 'l1234', 'Lecture'),
+(0000000003,'student', 's1234', 'Student'),
+(0000000004,'61101192','61101192', 'Student'),
+(0000000005,'61101242','61101242', 'Student'),
+(0000000006,'61101655','61101655', 'Student'),
+(0000000007,'61102299','61102299', 'Student');
 --
 -- Indexes for dumped tables
 --
