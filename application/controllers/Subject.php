@@ -9,6 +9,7 @@ class Subject extends CI_Controller
 		$this->load->view('AddSubject');
 	}
 
+
 	public function insert(){
 		// $this->load->model('UserModel');
 		// $result = $this->UserModel->insert($studentid,$coursid,$year,$term,$grade);
@@ -31,4 +32,5 @@ class Subject extends CI_Controller
 		 
  
 	}
+
 }

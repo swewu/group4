@@ -10,21 +10,35 @@
         <h2 style ="margin-top:25px;"> กรอกข้อมูลรายวิชาตกค้าง </h2>
             <form action="<?=base_url('Subject/insert')?>" method="post">
                 <div class="row " style ="margin-top:25px;">
-                    <div class="col" >
+                    <div class="col-md-2" >
                         <div class="form-group mb-3">
                             <label for="exampleInputEmail1">รหัสนักศึกษา</label>
                             <input type="text" class="form-control" name="studentid" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="รหัสนักศึกษา">
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-5">
                         <div class="form-group mb-3">
-                            <label for="exampleInputEmail1">ชื่อ</label>
-                            <input type="text" name="studentname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ชื่อ">
+                            <label for="exampleInputEmail1">ชื่อ  นามสกุล</label>
+                            <input type="text" name="studentname" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ชือ นามสกุล">
                         </div>
                     </div>
                 </div>
                 <div class="row" style ="margin-top:25px;">
-                    <div class="col">
+                    <div class="col-md-2">
+                        <div class="form-group mb-2">
+                            <label for="exampleInputEmail1">รหัสรายวิชา</label>
+                            <input type="text" name="courseID" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="รหัสรายวิชา">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="form-group mb-4">
+                            <label for="exampleInputEmail1">ชื่อรายวิชา</label>
+                            <input type="text" name="courseName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ชื่อรายวิชา">
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style ="margin-top:25px;">
+                    <div class="col-md-2">
                          <label class="my-1 mr-2" for="inlineFormCustomSelectPref">ภาคการศึกษา</label>
                             <select class="custom-select my-1 mr-sm-2" name="term" id="inlineFormCustomSelectPref">
                                 <option selected>- ภาคการศึกษา -</option>
@@ -33,7 +47,7 @@
                                 <option value="3">ภาคการศึกษาที่ 3</option>
                             </select>
                     </div>
-                    <div class="col">
+                    <div class="col-md-3">
                         <div class="form-group mb-3">
                             <label for="exampleInputEmail1">ปีการศึกษา</label>
                             <input type="text" name="year" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ปีการศึกษา">
@@ -41,7 +55,11 @@
                     </div>
                 </div>
                 
+              
                 <div class="row" style ="margin-top:25px;">
+<<<<<<< HEAD
+                    <div class="col-md-2">
+=======
                     <div class="col">
                         <div class="form-group mb-2">
                             <label for="exampleInputEmail1">รหัสรายวิชา</label>
@@ -57,6 +75,7 @@
                 </div>
                 <div class="row" style ="margin-top:25px;">
                     <div class="col">
+>>>>>>> fd282a6094cb1276de4d645facb9484146fa903f
                          <label class="my-2 mr-1" for="inlineFormCustomSelectPref">ผลการศึกษา</label>
                             <select class="custom-select my-1 mr-sm-2" name="grade" id="inlineFormCustomSelectPref">
                                 <option selected>- ผลการศึกษา -</option>
