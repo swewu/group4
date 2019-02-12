@@ -11,7 +11,7 @@ class Subject extends CI_Controller
 
 	public function insert()
 	{
-		$data = array(         
+		$data = array(
 			'studentid' => $_POST['studentid'],
 			'studentname' => $_POST['studentname'],
 			'year' => $_POST['year'],
@@ -21,6 +21,6 @@ class Subject extends CI_Controller
 			'grade' => $_POST['grade'],
 			'status' => $_POST['status']
 		);
-		$this->db->insert('historygrade',$data);
+		$this->db->insert('historygrade', $data);
 	}
 }
