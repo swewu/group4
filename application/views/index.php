@@ -39,6 +39,7 @@
             <span class="glyphicon glyphicon-edit"></span> Edit</a> 
             <a href="<?=base_url('/Welcome/delete/'.$row->historyid)?>" class="btn btn-danger btn-xs del">
             <span class="glyphicon glyphicon-remove"></span> Del</a></td>
+            
         </tr>
         <?php } elseif ($row->status == "F") { ?>
         <tr>
