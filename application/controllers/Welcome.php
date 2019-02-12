@@ -50,7 +50,7 @@ class Welcome extends CI_Controller {
 					$data = [
 						'result' => $result
 					];
-					$this->load->view("index",$data);
+					redirect('welcome/getRegrade/'.$username);
 				}
 				else
 				{
