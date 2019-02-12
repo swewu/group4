@@ -16,13 +16,16 @@
             <th class="text-center">แก้ไขข้อมูล</th>
         </tr>
     </thead>
-    <?php foreach($result as $row) { ?>
+    <?php foreach ($result as $row) { ?>
         <tr>
             <td><?=$row->studentid ?></td>
             <td><?=$row->studentName ?></td>
             <td><?=$row->courseName ?></td>
             <td><?=$row->status?></td>
-            <td class="text-center"><a class='btn btn-info btn-xs' href="#"><span class="glyphicon glyphicon-edit"></span> Edit</a> <a href="#" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+            <td class="text-center"><a class='btn btn-info btn-xs' href="#">
+            <span class="glyphicon glyphicon-edit"></span> Edit</a> 
+            <a href="#" class="btn btn-danger btn-xs">
+            <span class="glyphicon glyphicon-remove"></span> Del</a></td>
         </tr>
     <?php } ?>
     
