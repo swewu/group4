@@ -39,6 +39,7 @@
             <span class="glyphicon glyphicon-edit"></span> Edit</a> 
             <a href="#" class="btn btn-danger btn-xs">
             <span class="glyphicon glyphicon-remove"></span> Del</a></td>
+            
         </tr>
         <?php } elseif ($row->status == "F") { ?>
         <tr>
