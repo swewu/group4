@@ -56,27 +56,11 @@
                 </div>
                 
               
+               
                 <div class="row" style ="margin-top:25px;">
-<<<<<<< HEAD
                     <div class="col-md-2">
-=======
-                    <div class="col">
-                        <div class="form-group mb-2">
-                            <label for="exampleInputEmail1">รหัสรายวิชา</label>
-                            <input type="text" name="courseid" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="รหัสรายวิชา">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group mb-4">
-                            <label for="exampleInputEmail1">ชื่อรายวิชา</label>
-                            <input type="text" name="courseName" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ชื่อรายวิชา">
-                        </div>
-                    </div>
-                </div>
-                <div class="row" style ="margin-top:25px;">
-                    <div class="col">
->>>>>>> fd282a6094cb1276de4d645facb9484146fa903f
-                         <label class="my-2 mr-1" for="inlineFormCustomSelectPref">ผลการศึกษา</label>
+
+                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">ผลการศึกษา</label>
                             <select class="custom-select my-1 mr-sm-2" name="grade" id="inlineFormCustomSelectPref">
                                 <option selected>- ผลการศึกษา -</option>
                                 <option value="1">W</option>
