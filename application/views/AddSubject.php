@@ -17,6 +17,7 @@
    <li><a href='#'>Products</a></li>
    <li><a href='#'>Company</a></li>
    <li><a href='#'>Contact</a></li>
+   <li><a href='#'>Log Out</a></li>
 </ul>
 </div>
 <link rel="stylesheet" href="<?=base_url()?>public/css/styles.css">
