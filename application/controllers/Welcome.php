@@ -73,7 +73,6 @@ class Welcome extends CI_Controller {
 	// $studentid,$studentname,$year,$courseID,$courseName,$term,$grade
 	public function delete($historyid)
 	{
-		$historyid = 'historyid';
 		$this->load->model('historygrade');
 		$result = $this->UserModel->delete($historyid);
 	}
