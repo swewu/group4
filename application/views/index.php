@@ -2,12 +2,23 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
-
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">LOGO</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+     
+    </ul>
+  </div>
+</nav>
+<br><br><br><br>
 <div class="container">
     <div class="row col-md-6 col-md-offset-2 custyle">
     <table class="table table-striped custab">
     <thead>
-    <a href="#" class="btn btn-primary btn-xs pull-right"><b>+</b> เพิ่มรายวิชา</a>
+    <a href="http://localhost/group4/index.php/Subject/add" class="btn btn-primary btn-xs pull-right"><b>+</b> เพิ่มรายวิชา</a>
         <tr>
             <!-- <th>รหัสนักศึกษา</th> -->
             <!-- <th>ลำดับ</th> -->
