@@ -20,10 +20,11 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('AddSubject');
+		$this->load->view('login');
 	}
 	
-	public function getReGrade($username){
+	public function getReGrade($username)
+	{
 		$this->load->model('UserModel');
 		$result = $this->UserModel->getregrade($username);
 		$data = [
@@ -31,16 +32,34 @@ class Welcome extends CI_Controller {
 		];
 		$this->load->view("index",$data);
 	}
-	public function login($username,$password){
-		$this->load->model('UserModel');
-		$result = $this->UserModel->login($username,$password);
-		if($_SESSION['login']){
-			$this->load->view('index');
+
+	public function login()
+	{
+		if(isset($_POST['username']) && isset($_POST['password']))
+		{
+			$username = $_POST['username'];
+			$password = $_POST['password'];
+			$this->load->model('UserModel');
+			$result = $this->UserModel->login($username,$password);
+			if($_SESSION['login']!=null){
+				$this->load->model('UserModel');
+				$result = $this->UserModel->getregrade($username);
+				$data = [
+					'result' => $result
+				];
+				$this->load->view("index",$data);
+			}
+			else
+			{
+				$this->load->view("login");
+			}
+		
 		}
 
 	}
 
-	public function insert(){
+	public function insert()
+	{
 		$studentid = 'studentid';
 		$studentname = 'studentname';
 		$year = 'year';
@@ -50,6 +69,6 @@ class Welcome extends CI_Controller {
 		$grade = 'grade';
 		$this->load->model('UserModel');
 		$result = $this->UserModel->insert($studentid,$studentname,$year,$courseID,$courseName,$term,$grade);
-	}
+	}	
 	// $studentid,$studentname,$year,$courseID,$courseName,$term,$grade
 }

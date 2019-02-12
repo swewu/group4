@@ -27,7 +27,7 @@
                     <div class="col-md-2">
                         <div class="form-group mb-2">
                             <label for="exampleInputEmail1">รหัสรายวิชา</label>
-                            <input type="text" name="courseID" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="รหัสรายวิชา">
+                            <input type="text" name="courseid" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="รหัสรายวิชา">
                         </div>
                     </div>
                     <div class="col-md-5">
@@ -53,6 +53,7 @@
                             <input type="text" name="year" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ปีการศึกษา">
                         </div>
                     </div>
+<<<<<<< HEAD
                 </div>
                 
               
@@ -61,15 +62,27 @@
                     <div class="col-md-2">
 
                          <label class="my-1 mr-2" for="inlineFormCustomSelectPref">ผลการศึกษา</label>
+=======
+                </div>      
+                <div class="row" style ="margin-top:25px;">
+                         <label class="my-2 mr-1" for="inlineFormCustomSelectPref">ผลการศึกษา</label>
+>>>>>>> e677231764c49bafff24f09e64e3b06b4b1f9709
                             <select class="custom-select my-1 mr-sm-2" name="grade" id="inlineFormCustomSelectPref">
                                 <option selected>- ผลการศึกษา -</option>
-                                <option value="1">W</option>
-                                <option value="2">F</option>
-                                <option value="3">D</option>
-                                <option value="4">D+</option>
+                                <option value="W">W</option>
+                                <option value="F">F</option>
+                                <option value="D">D</option>
+                                <option value="D+">D+</option>
                             </select>
                     </div>
                 </div>
+
+                <div class="col-md-3">
+                        <div class="form-group mb-3">
+                            <label for="exampleInputEmail1">สถานะ</label>
+                            <input type="text" name="status" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="สถานะ">
+                        </div>
+                    </div>
                 <br>
                <div class="row" style ="margin-top:25px;">
                     <div class="col">
