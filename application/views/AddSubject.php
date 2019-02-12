@@ -71,12 +71,23 @@
                     </div>
                 </div>
 
-                <div class="col-md-3">
-                        <div class="form-group mb-3">
-                            <label for="exampleInputEmail1">สถานะ</label>
-                            <input type="text" name="status" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="สถานะ">
-                        </div>
+                <div class="row" style ="margin-top:25px;">
+                    <div class="col-md-2">
+
+                         <label class="my-1 mr-2" for="inlineFormCustomSelectPref">สถานะ</label>
+                            <select class="custom-select my-1 mr-sm-2" name="grade" id="inlineFormCustomSelectPref">
+                                <option selected>- สถานะ -</option>
+                                <option value="A">A</option>
+                                <option value="B+">B+</option>
+                                <option value="B">B</option>
+                                <option value="C+">C+</option>
+                                <option value="C">C</option>
+                                <option value="D+">D+</option>
+                                <option value="D">D</option>
+                                <option value="F">F</option>
+                            </select>
                     </div>
+                </div>
                 <br>
                <div class="row" style ="margin-top:25px;">
                     <div class="col">
