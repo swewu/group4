@@ -75,7 +75,7 @@
                     <div class="col-md-2">
 
                          <label class="my-1 mr-2" for="inlineFormCustomSelectPref">สถานะ</label>
-                            <select class="custom-select my-1 mr-sm-2" name="grade" id="inlineFormCustomSelectPref">
+                            <select class="custom-select my-1 mr-sm-2" name="status" id="inlineFormCustomSelectPref">
                                 <option selected>- สถานะ -</option>
                                 <option value="A">A</option>
                                 <option value="B+">B+</option>
