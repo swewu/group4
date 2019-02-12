@@ -35,19 +35,19 @@
           </div>
         </div>
         <div class="d-flex justify-content-center form_container">
-          <form action="<?= base_url("welcome/getReGrade/61101192")?>">
+          <form method="post" action="<?= base_url("welcome/login")?>">
             <p class="text-center">ระบบตรวจสอบรายวิชาตกค้าง</p><br>
             <div class="input-group mb-3">
               <div class="input-group-append">
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
               </div>
-              <input type="text" name="" class="form-control input_user" value="" placeholder="username">
+              <input type="text" name="username" class="form-control input_user" value="" placeholder="username">
             </div>
             <div class="input-group mb-2">
               <div class="input-group-append">
                 <span class="input-group-text"><i class="fas fa-key"></i></span>
               </div>
-              <input type="password" name="" class="form-control input_pass" value="" placeholder="password">
+              <input type="password" name="password" class="form-control input_pass" value="" placeholder="password">
             </div>
             <div class="form-group">
               <div class="custom-control custom-checkbox">
