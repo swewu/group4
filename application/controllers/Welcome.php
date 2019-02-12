@@ -43,7 +43,7 @@ class Welcome extends CI_Controller {
 			$result = $this->UserModel->login($username,$password);
 			if($_SESSION['login']!=null)
 			{
-				if($_SESSION['rule']=="Student")
+				if($_SESSION['role']=="Student")
 				{
 					$this->load->model('UserModel');
 					$result = $this->UserModel->getregrade($username);
@@ -86,7 +86,26 @@ class Welcome extends CI_Controller {
 	}
 
 	public function update(){
-		
+		$historyid = $_POST['historyid'];
+		$data = array(         
+			'studentid' => $_POST['studentid'],         
+			'studentname' => $_POST['studentname'],         
+			'year' => $_POST['year'],
+			'courseid' => $_POST['courseid'],  
+            'courseName' => $_POST['courseName'],
+            'term' => $_POST['term'],
+			'grade' => $_POST['grade'],
+			'status' => $_POST['status']  
+		 );
+		 $this->load->model('HistoryModel');
+		 $result = $this->HistoryModel->update($data,$historyid);
+		 if ($result){
+			 $this.getReGrade($data->studentid);
+		 }
+		 else{
+			 echo "false";
+		 }
+
 	}
 
 }
