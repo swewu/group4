@@ -31,5 +31,10 @@ class UserModel extends CI_Model
             $_SESSION['login'] = true;
         }
     }
+    public function delete($historyid){
+        $sql = "DELETE FROM historygrade WHERE historyid = '".$historyid."'";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
 
 }
