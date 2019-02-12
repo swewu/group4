@@ -107,5 +107,14 @@ class Welcome extends CI_Controller {
 		 }
 
 	}
+	public function getStudent()
+	{
+		$this->load->model('UserModel');
+		$result = $this->UserModel->getStudent();
+		$data = [
+			'result' => $result
+		];
+		$this->load->view("student",$data);
+	}
 
 }
