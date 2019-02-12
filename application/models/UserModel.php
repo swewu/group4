@@ -41,4 +41,9 @@ class UserModel extends CI_Model
         $sql = "DELETE FROM historygrade WHERE historyid = '".$historyid."'";
         $query = $this->db->query($sql);
     }
+    public function getStudent(){
+        $sql = "SELECT * FROM historygrade";
+        $query = $this->db->query($sql);
+        return $query->result();
+    }
 }
