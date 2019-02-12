@@ -12,14 +12,16 @@
 <body>
 
 <div id='cssmenu'>
-<ul>
-   <li class='active'><a href='#'>Home</a></li>
-   <li><a href='#'>Products</a></li>
-   <li><a href='#'>Company</a></li>
-   <li><a href='#'>Contact</a></li>
-   <li><a href='#'>Log Out</a></li>
-</ul>
+    <ul>
+        <li class='active'><a href='#'>Home</a></li>
+        <li><a href='#'>Products</a></li>
+        <li><a href='#'>Company</a></li>
+        <li><a href='#'>Contact</a></li>
+        <li><a href='<?=base_url('login')?>'>logout</a></li>
+    </ul> 
 </div>
+
+
 <link rel="stylesheet" href="<?=base_url()?>public/css/styles.css">
 
 
