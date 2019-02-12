@@ -4,6 +4,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Subject extends CI_Controller 
 {
 
+
 	public function add()
 	{
 		$this->load->view('AddSubject');
@@ -11,8 +12,6 @@ class Subject extends CI_Controller
 
 
 	public function insert(){
-		// $this->load->model('UserModel');
-		// $result = $this->UserModel->insert($studentid,$coursid,$year,$term,$grade);
 		$text = 'บันทึกสำเร็จ';
 
 		$data = array(         
@@ -25,7 +24,6 @@ class Subject extends CI_Controller
             'grade' => $_POST['grade']  
 		 );
 		 $this->db->insert('historygrade',$data); 
-		 echo "$text";
 
 		
 
