@@ -21,13 +21,13 @@ class UserModel extends CI_Model
         $query = $this->db->query($sql);
         return $query->result();
     }
-    public function login($username , $password)
+    public function login($username, $password)
     {
         $this->db->where('username', $username);
         $this->db->where('password', $password);
         $query = $this->db->get('user');
         $_SESSION['login'] = false;
-        foreach ($query->result() as $row )
+        foreach ($query->result() as $row)
         {
             $_SESSION['username'] = $row->username;
             $_SESSION['password'] = $row->password;
@@ -39,7 +39,5 @@ class UserModel extends CI_Model
     {
         $sql = "DELETE FROM historygrade WHERE historyid = '".$historyid."'";
         $query = $this->db->query($sql);
-        
     }
-
 }

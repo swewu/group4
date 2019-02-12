@@ -15,7 +15,7 @@ class HistoryModel extends CI_Model
         $this->db->set($data);
         $this->db->where($historyid);
         $this->db->update('historygrade');
-        $this->db->trans_complete();    
+        $this->db->trans_complete();
         return $this->db->tran_status();
     }
 }
