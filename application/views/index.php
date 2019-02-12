@@ -37,7 +37,7 @@
             <td><?=$row->status?></td>
             <td class="text-center"><a class='btn btn-info btn-xs' href="#">
             <span class="glyphicon glyphicon-edit"></span> Edit</a> 
-            <a href="#" class="btn btn-danger btn-xs">
+            <a href="<?=base_url('/Welcome/delete/'.$row->historyid)?>" class="btn btn-danger btn-xs del">
             <span class="glyphicon glyphicon-remove"></span> Del</a></td>
         </tr>
         <?php } elseif ($row->status == "F") { ?>
@@ -46,7 +46,7 @@
             <td><?=$row->status?></td>
             <td class="text-center"><a class='btn btn-info btn-xs' href="#">
             <span class="glyphicon glyphicon-edit"></span> Edit</a> 
-            <a href="#" class="btn btn-danger btn-xs">
+            <a href="<?=base_url('/Welcome/delete/'.$row->historyid)?>" class="btn btn-danger btn-xs del">
             <span class="glyphicon glyphicon-remove"></span> Del</a></td>
         </tr>
         <?php } elseif ($row->status == "D") { ?>
@@ -55,7 +55,7 @@
             <td><?=$row->status?></td>
             <td class="text-center"><a class='btn btn-info btn-xs' href="#">
             <span class="glyphicon glyphicon-edit"></span> Edit</a> 
-            <a href="#" class="btn btn-danger btn-xs">
+            <a href="<?=base_url('/Welcome/delete/'.$row->historyid)?>" class="btn btn-danger btn-xs del">
             <span class="glyphicon glyphicon-remove"></span> Del</a></td>
         </tr>
         <?php } else { ?>
@@ -64,7 +64,7 @@
             <td><?=$row->status?></td>
             <td class="text-center"><a class='btn btn-info btn-xs' href="#">
             <span class="glyphicon glyphicon-edit"></span> Edit</a> 
-            <a href="#" class="btn btn-danger btn-xs">
+            <a href="<?=base_url('/Welcome/delete/'.$row->historyid)?>" class="btn btn-danger btn-xs del">
             <span class="glyphicon glyphicon-remove"></span> Del</a></td>
         </tr>
         <?php } ?>
@@ -72,3 +72,14 @@
     </table>
     </div>
 </div>
+
+<Script>
+$(document).ready(function(){
+  $(".del").click(function(){
+    if (!confirm("คุณต้องการ ลบ รายวิชาหรือไม่")){
+      return false;
+    }
+  });
+});
+
+</Script>
