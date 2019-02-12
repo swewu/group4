@@ -27,7 +27,8 @@ class UserModel extends CI_Model
         $this->db->where('password', $password);
         $query = $this->db->get('user');
         $_SESSION['login'] = false;
-        foreach ($query->result() as $row )
+        $rows = $query->result();
+        foreach ($rows as $row)
         {
             $_SESSION['username'] = $row->username;
             $_SESSION['password'] = $row->password;
