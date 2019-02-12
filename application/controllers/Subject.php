@@ -12,6 +12,7 @@ class Subject extends CI_Controller
 	public function insert(){
 		// $this->load->model('UserModel');
 		// $result = $this->UserModel->insert($studentid,$coursid,$year,$term,$grade);
+		$text = 'บันทึกสำเร็จ';
 
 		$data = array(         
 			'studentid' => $_POST['studentid'],         
@@ -23,9 +24,9 @@ class Subject extends CI_Controller
             'grade' => $_POST['grade']  
 		 );
 		 $this->db->insert('historygrade',$data); 
-		 echo "<script>alert(บันทึกข้อมูลสำเร๊จ);window.location=contact.php;</script>";
-		//  $this->load->model('UserModel');
-		//  $result = $this->UserModel->insert($studentid,$studentname,$year,$courseID,$courseName,$term,$grade); 
+		 echo "$text";
+
+		
 
 		 
  
