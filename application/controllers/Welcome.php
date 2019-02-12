@@ -71,9 +71,9 @@ class Welcome extends CI_Controller {
 	// $studentid,$studentname,$year,$courseID,$courseName,$term,$grade
 	public function delete($historyid)
 	{
-		$historyid = 'historyid';
-		$this->load->model('historygrade');
+		$this->load->model('UserModel');
 		$result = $this->UserModel->delete($historyid);
+		redirect($_SERVER['HTTP_REFERER']);
 	}
 	public function editReGrade($historyid) 
 	{
