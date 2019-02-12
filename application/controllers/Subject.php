@@ -12,8 +12,7 @@ class Subject extends CI_Controller
 
 
 	public function insert(){
-		$text = 'บันทึกสำเร็จ';
-
+		
 		$data = array(         
 			'studentid' => $_POST['studentid'],         
 			'studentname' => $_POST['studentname'],         
