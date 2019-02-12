@@ -21,7 +21,8 @@ class Subject extends CI_Controller
 			'courseid' => $_POST['courseid'],  
             'courseName' => $_POST['courseName'],
             'term' => $_POST['term'],
-            'grade' => $_POST['grade']  
+			'grade' => $_POST['grade'],
+			'status' => $_POST['status']  
 		 );
 		 $this->db->insert('historygrade',$data); 
 
